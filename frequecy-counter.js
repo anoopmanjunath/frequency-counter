@@ -2,15 +2,15 @@ function frequency(string){
 	if(string == ' '){
 		return 'empty';
 	}
- var outPut={};
+ var res={};
 	string.split('').forEach(function(str){
-		if(!outPut.hasOwnProperty(str)){
-			outPut[str]= 1;
+		if(!res.hasOwnProperty(str)){
+			res[str]= 1;
 		}
 		else {
-			outPut[str] ++;
+			res[str] ++;
 						 }
 						 });
-	return outPut;
+	return res;
 }
 console.log(frequency('abca'));
